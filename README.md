@@ -4,6 +4,8 @@ An electronic health record (EHR) web app for a small clinic: register patients,
 
 **Live demo:** [ADD: Vercel URL] — loads four fictional patients. Everything you change stays in your own browser.
 
+![CareChart patient summary with a severe-allergy banner, latest vitals and problem list](docs/screenshot.webp)
+
 ## What it does
 
 - **Patient register** with search by name, medical record number (MRN) or phone. Each new patient gets the next MRN automatically.
