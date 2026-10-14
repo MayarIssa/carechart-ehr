@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Public Sans Variable", "Segoe UI", system-ui, sans-serif;
+
+  /* Clinical palette: cool chart paper, blue-black ink, scrubs green, and a red reserved for allergies and critical readings. */
+  --color-paper: #f7f9f8;
+  --color-sheet: #ffffff;
+  --color-ink: #1c2733;
+  --color-ink-soft: #52606d;
+  --color-rule: #d6dedb;
+  --color-scrub: #2f6f68;
+  --color-scrub-deep: #1f4f4a;
+  --color-scrub-tint: #e4f0ed;
+  --color-alert: #b42318;
+  --color-alert-tint: #fdecea;
+  --color-warn: #a15c07;
+  --color-warn-tint: #fdf3e2;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  color-scheme: light;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "tnum" 1;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-scrub);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
 }
