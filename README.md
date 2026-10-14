@@ -2,7 +2,7 @@
 
 An electronic health record (EHR) web app for a small clinic: register patients, keep their allergies, problems and medications up to date, record vitals, follow blood-pressure trends, and write visit notes in the SOAP format clinicians use.
 
-**Live demo:** [ADD: Vercel URL] — loads four fictional patients. Everything you change stays in your own browser.
+**Live demo:** [carechart-ehr.vercel.app](https://carechart-ehr.vercel.app) — loads four fictional patients. Everything you change stays in your own browser.
 
 ![CareChart patient summary with a severe-allergy banner, latest vitals and problem list](docs/screenshot.webp)
 
